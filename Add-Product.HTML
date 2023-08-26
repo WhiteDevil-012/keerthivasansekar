@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" title="Invoice-Hub">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Invoice HUB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./CSS/AdminLTE.css">
+   
+    
+    
+        <!-- JS -->
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="js/moment.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.js"></script>
+      <script src="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+      <script src="js/bootstrap.datetime.js"></script>
+      <script src="js/bootstrap.password.js"></script>
+      <script src="js/scripts.js"></script>
+      
+      <!-- AdminLTE App -->
+      <script src="js/app.min.js"></script>
+  
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.datetimepicker.css">
+      <link rel="stylesheet" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
+      <link rel="stylesheet" href="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
+      <link rel="stylesheet" href="./CSS/styles.css">
+      <link rel="stylesheet" href="./css/sidebar.css">
+    
+</head>
+
+<body>
+    <main class="table">
+        <section class="table__header">
+            <h1>Add Product</h1>
+           
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Go To Home"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label> <a href="dashboard.html">EXIT &nbsp; &#10140;</a></label>
+                  
+                    
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+           
+            <hr>
+            
+            <div id="response" class="alert alert-success" style="display:none;">
+                <a href="#" class="close" data-dismiss="alert">&times;</a>
+                <div class="message"></div>
+            </div>
+                                    
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Product Information</h4>
+                        </div>
+                        <div class="panel-body form-group form-group-sm">
+                            <form method="post" id="add_product">
+                                <input type="hidden" name="action" value="add_product">
+            
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <input type="text" class="form-control required" name="product_name" placeholder="Enter Product Name">
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="text" class="form-control required" name="product_desc" placeholder="Enter Product Description">
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">$</span>
+                                            <input type="number" name="product_price" class="form-control required" placeholder="0.00" aria-describedby="sizing-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 margin-top btn-group">
+                                        <input type="submit" id="action_add_product" class="btn btn-success float-right" value="Add Product" data-loading-text="Adding...">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            <div>
+            
+            
+        </section>
+    </main>
+   </body>
+
+</html>
